@@ -1,4 +1,5 @@
 import { StrictMode } from 'react'
+import "./styles/globals.css"; // import Tailwind and global styles
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
