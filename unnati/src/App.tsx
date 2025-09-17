@@ -1,22 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import Button from "./components/ui/Button";
+import Card from "./components/ui/card";
+import Input from "./components/ui/input";
 
 function App() {
-  const [count, setCount] = useState(0)
   return (
-    <div className="min-h-screen bg-blue-500 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          🎉 Unnati App
-        </h1>
-        <p className="text-gray-600">
-          Tailwind CSS is working! Ready to build.
-        </p>
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
+      <div className="space-y-6 w-full max-w-md">
+        <Card title="Test Card">
+          <p className="text-gray-700 mb-4">This is a simple card example.</p>
+          <Input placeholder="Type something..." />
+          <div className="mt-4 flex gap-2">
+            <Button>Default</Button>
+            <Button variant="outline">Outline</Button>
+            <Button variant="ghost">Ghost</Button>
+          </div>
+        </Card>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

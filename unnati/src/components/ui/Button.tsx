@@ -1,5 +1,6 @@
+// src/components/ui/Button.tsx
 import React from "react";
-import { cn } from "@/lib/helpers"; // utility for merging classNames (we'll add it in lib)
+import { cn } from "../../lib/helpers"; // relative import guaranteed
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "default" | "outline" | "ghost";
@@ -20,8 +21,7 @@ const Button: React.FC<ButtonProps> = ({
     default: "bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-400",
     outline:
       "border border-gray-300 text-gray-700 hover:bg-gray-100 focus:ring-gray-400",
-    ghost:
-      "text-gray-700 hover:bg-gray-100 focus:ring-gray-400",
+    ghost: "text-gray-700 hover:bg-gray-100 focus:ring-gray-400",
   };
 
   const sizes = {
