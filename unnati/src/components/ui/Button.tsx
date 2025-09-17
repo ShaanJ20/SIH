@@ -1,5 +1,4 @@
 // src/components/ui/Button.tsx
-import React from "react";
 import { cn } from "../../lib/helpers"; // relative import guaranteed
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {

@@ -1,4 +1,4 @@
-import React from "react";
+
 import { cn } from "../../lib/helpers"; // updated relative import
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
