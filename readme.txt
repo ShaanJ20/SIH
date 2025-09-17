@@ -1,1 +1,0 @@
-SIH 25 - The problem statement: Smart Curriculum Activity & Attendance App
